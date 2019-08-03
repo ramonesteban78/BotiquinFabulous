@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Alerts.fs" />
+    <Compile Include="CaptureMedicine.fs" />
+    <Compile Include="MyBotiquin.fs" />
+    <Compile Include="BotiquinFabulous.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Fabulous.XamarinForms" Version="0.41.0" />
+    <PackageReference Include="Fabulous.XamarinForms.LiveUpdate" Version="0.41.0" />
+    <PackageReference Include="FSharp.Core" Version="4.6.2" />
+    <PackageReference Update="FSharp.Core" Version="4.6.2" />
+    <!-- workaround for VSMac bug https://github.com/mono/monodevelop/pull/5137 -->
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+    <PackageReference Include="I18NPortable" Version="0.6.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Botiquin\Botiquin.fsproj" />
+  </ItemGroup>
+</Project>
